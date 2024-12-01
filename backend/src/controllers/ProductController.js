@@ -28,13 +28,7 @@ const createProduct = async (req, res) => {
                 status: 'ERR',
                 message: 'The input price is required'
             })
-        } else if (!description) {
-            return res.status(400).json({
-                status: 'ERR',
-                message: 'The input price is required'
-            })
-        }
-        else if (!countInStock) {
+        } else if (!countInStock) {
             return res.status(400).json({
                 status: 'ERR',
                 message: 'The input cit is required'
